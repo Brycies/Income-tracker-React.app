@@ -3,7 +3,7 @@ import header from './components/header';
 
 function App() {
 
-  const [income, setIncome] = useState()
+  const [income, setIncome] = useState([])
   const [totalIncome, setTotalIncome] = useState (0)
 
 
