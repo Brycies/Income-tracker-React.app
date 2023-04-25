@@ -1,15 +1,15 @@
 import React, { useRef } from "react";
 
-function incomeForm({ income, setIncome }) {
-  const desc = useRef[null];
-  const date = useRef[null];
-  const price = useRef[null];
+function IncomeForm({ income, setIncome }) {
+  const desc = useRef(null);
+  const date = useRef(null);
+  const price = useRef(null);
 
   const AddIncome = (e) => {
     e.preventDefault();
 
     let d = date.current.value.split("-");
-    let newD = new Date(d[0], d[1], d[2]);
+    let newD = new Date(d[0], d[1] - 1, d[2]);
 
     setIncome([
       ...income,
@@ -24,6 +24,7 @@ function incomeForm({ income, setIncome }) {
     price.current.value = null;
     date.current.value = null;
   };
+
   return (
     <form className="income-form" onSubmit={AddIncome}>
       <div className="form-inner">
@@ -53,4 +54,5 @@ function incomeForm({ income, setIncome }) {
     </form>
   );
 }
-export default incomeForm;
+
+export default IncomeForm;
