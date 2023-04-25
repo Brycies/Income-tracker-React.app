@@ -3,7 +3,7 @@ import IncomeItem from "./IncomeItem";
 
 function IncomeList({ income, setIncome }) {
   const removeIncome = (i) => {
-    let temp = income.filter((v, index) => index !== i);
+    let temp = income.filter((v, index) => index != i);
     setIncome(temp);
   };
 
@@ -14,7 +14,7 @@ function IncomeList({ income, setIncome }) {
   return (
     <div className="income-list">
       {income.sort(sortByDate).map((value, index) => (
-        <incomeItem
+        <IncomeItem
           key={index}
           income={value}
           index={index}

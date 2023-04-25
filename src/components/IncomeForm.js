@@ -48,7 +48,7 @@ function incomeForm({ income, setIncome }) {
           placeholder="Income date..."
           ref={date}
         />
-        <input type="submit" value="Add Income" ref={date} />
+        <input type="submit" value="Add Income" />
       </div>
     </form>
   );
