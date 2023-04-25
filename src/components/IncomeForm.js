@@ -35,11 +35,18 @@ function incomeForm({ income, setIncome }) {
           ref={desc}
         />
         <input
-          type="text"
+          type="number"
           name="price"
           id="price"
-          placeholder="Income date..."
+          placeholder="Price..."
           ref={price}
+        />
+        <input
+          type="date"
+          name="date"
+          id="date"
+          placeholder="Income date..."
+          ref={date}
         />
         <input type="submit" value="Add Income" ref={date} />
       </div>
