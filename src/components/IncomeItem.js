@@ -16,7 +16,7 @@ function IncomeItem({ income, index, removeIncome }) {
         x
       </button>
       <div className="desc">{income.desc}</div>
-      <div className="price">US{income.price}</div>
+      <div className="price">Ksh{income.price}</div>
       <div className="date">{day + "/" + month + "/" + year}</div>
     </div>
   );
